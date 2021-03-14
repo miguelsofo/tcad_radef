@@ -1,0 +1,23 @@
+
+# Servidor de licencia
+export SNPSLMD_LICENSE_FILE=27020@localhost
+export LM_LICENSE_FILE=27020@localhost
+
+# Agrego path a Sentaurus
+export STROOT=/opt/synopsys/TCADSentaurus/O_2018.06
+export PATH="$PATH:$STROOT/bin"
+
+# Path to synopsys tools
+export SYNOPSYS=/opt/synopsys
+export STDB="$HOME/TCAD_sim"
+
+# Path to TSUPREM-4
+export TS=/opt/synopsys/tsuprem-4/P_2019.03/bin
+export PATH="$PATH:$TS"
+
+# Medici
+export ME=/opt/synopsys/taurusMedici/P_2019.03/bin
+export PATH="$PATH:$ME"
+
+
+
