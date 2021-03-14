@@ -4,15 +4,15 @@ Para poder ejecutar TCAD Sentaurus hacer:
 source source_sentaurus 
 
 - Carpetas con archivos de comandos: 
-	cmds
-	svisual
-	structure
-	plots
+* cmds
+* svisual
+* structure
+* plots
 
 - Carpetas con archivos de salida:
-	logs
-	plts
-	currents
-	savs
-	out_svisual 
-	results
+* logs
+* plts
+* currents
+* savs
+* out_svisual 
+* results
