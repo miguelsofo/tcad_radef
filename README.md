@@ -14,8 +14,6 @@ mkdir savs
 mkdir out_svisual 
 mkdir results
 ```
-
-
 Carpetas con archivos de comandos: 
 * cmds
 * svisual
@@ -29,3 +27,9 @@ Carpetas con archivos de salida:
 * savs
 * out_svisual 
 * results
+
+Para ejecutar un script de svisual hacer:
+```
+svisual -bx script.tcl 
+```
+
