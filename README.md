@@ -4,6 +4,18 @@ Para poder ejecutar TCAD Sentaurus hacer:
 ```
 source source_sentaurus 
 ```
+
+Crear los siguentes directorios:
+```
+mkdir logs
+mkdir plts
+mkdir currents
+mkdir savs
+mkdir out_svisual 
+mkdir results
+```
+
+
 Carpetas con archivos de comandos: 
 * cmds
 * svisual
