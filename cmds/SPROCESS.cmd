@@ -28,19 +28,9 @@ grid	set.min.normal.size= 1<nm>	set.normal.growth.ratio.2d= 1.2
 pdbSet	grid	adaptive	1
 pdbSet	grid	AdaptiveField	Refine.Rel.Error	0.50
 
-## Montecarlo Ion implantation
-#pdbSet ImplantData DamageControl PAI 
-#pdbSet ImplantData DoseControl BeamDose 
-#pdbSet ImplantData TS4Backscattering 1 ;# This can reduce de dose.
-#pdbSet ImplantData MonteCarlo 1
-#pdbSet MCImplant Particles 1000
-#pdbSet MCImplant cascades 1
-#pdbSet MCImplant iBCA 1 ;# improved Binary Collision Approximation damage model 
-#pdbSet MCImplant BeamDivergence 0
-#pdbSet MCImplant Smoothing 1 ;#Noise in the MC implant profile can cause convergence problems. 
-
 #build masks.  *NOTE* masked region isn't processed
-mask	name=BCIM	left=4	right=6
+#mask	name=BCIM	left=4	right=6
+mask	name=BCIM	left=0	right=10
 
 #deposit EGO stack
 deposit	oxide	type=isotropic	thickness=0.05

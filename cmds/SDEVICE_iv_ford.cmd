@@ -15,7 +15,7 @@ Electrode {
 Physics {
 Temperature=300.0
 Fermi
-EffectiveIntrinsicDensity( OldSlotboom)
+*EffectiveIntrinsicDensity( OldSlotboom)
 
 Mobility(
 	DopingDep
@@ -25,7 +25,7 @@ Mobility(
 Recombination( 
 	SRH( DopingDep TempDependence)  
 	Auger
-	Band2Band
+*	Band2Band
 )
 
 }
@@ -81,7 +81,7 @@ Solve {
 	Transient(
 		InitialTime=0
 		FinalTime=1
-		MaxStep=0.02
+		MaxStep=0.01
 		Goal {Name="a.cont" Voltage=20}
 	){Coupled{Poisson Electron Hole} CurrentPlot}
 
