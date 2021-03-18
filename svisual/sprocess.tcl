@@ -7,6 +7,11 @@ list_regions -plot $myplot2D
 list_materials -plot $myplot2D
 list_fields -plot $myplot2D
 
+# Set Legend properties
+set_legend_prop -plot $myplot2D -title_font_family arial -title_font_factor 1.7 -title_font_color #000000 -title_font_att bold
+set_legend_prop -plot $myplot2D -label_font_family arial -label_font_factor 1.5 -label_font_color #000000 -label_font_att bold
+set_legend_prop -plot $myplot2D -show_background
+
 set_window_full -on
 
 set_field_prop -plot $myplot2D -geom $mydata2D BTotal -show_bands
@@ -20,3 +25,5 @@ export_view ../out_svisual/zoom.png -plots $myplot2D -resolution 1500x1500 -form
 
 set mydata1D [create_cutline -plot $myplot2D -type y -at 5.0]
 export_variables -dataset $mydata1D -filename ../out_svisual/sprocess.csv -overwrite
+
+
