@@ -14,8 +14,8 @@ Electrode {
 
 Physics {
 Temperature=300.0
-Fermi
-*EffectiveIntrinsicDensity( OldSlotboom)
+*Fermi
+EffectiveIntrinsicDensity( OldSlotboom)
 
 Mobility(
 	DopingDep
@@ -82,7 +82,7 @@ Solve {
 		InitialTime=0
 		FinalTime=1
 		MaxStep=0.01
-		Goal {Name="a.cont" Voltage=20}
+		Goal {Name="a.cont" Voltage=1}
 	){Coupled{Poisson Electron Hole} CurrentPlot}
 
 }
