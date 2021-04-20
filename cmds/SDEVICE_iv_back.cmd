@@ -14,7 +14,7 @@ Electrode {
 
 Physics {
 Temperature=300.0
-Fermi
+* Fermi
 EffectiveIntrinsicDensity( OldSlotboom)
 
 Mobility(
@@ -24,9 +24,9 @@ Mobility(
 
 Recombination( 
 	SRH( DopingDep TempDependence)  
-  Band2Band
+*  Band2Band
 	Auger
-  Avalanche ( vanOverstraeten Eparallel )
+*  Avalanche ( vanOverstraeten Eparallel )
 )
 
 }

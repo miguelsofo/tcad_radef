@@ -20,8 +20,8 @@ export ME=/opt/synopsys/taurusMedici/P_2019.03/bin
 export PATH="$PATH:$ME"
 
 
-mkdir logs
-mkdir plts
-mkdir currents
-mkdir savs
-mkdir out_svisual 
+#mkdir logs
+#mkdir plts
+#mkdir currents
+#mkdir savs
+#mkdir out_svisual 

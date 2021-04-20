@@ -24,3 +24,4 @@ Para ejecutar un script de svisual hacer:
 svisual -bx script.tcl 
 ```
 
+En la carpeta plots estan los scripts de python para graficar datos.
