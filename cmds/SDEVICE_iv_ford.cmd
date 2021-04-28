@@ -81,8 +81,8 @@ Solve {
 	Transient(
 		InitialTime=0
 		FinalTime=1
-		MaxStep=0.01
-		Goal {Name="a.cont" Voltage=1}
+		MaxStep=0.001
+		Goal {Name="a.cont" Voltage=2}
 	){Coupled{Poisson Electron Hole} CurrentPlot}
 
 }

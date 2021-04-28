@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+# Para graficar el campo electrico a lo largo de X para un dado y. 
+
 #data="../out_svisual/back_0004_des.tdr_ycut5.0um.csv"
 #data="../out_svisual/back_0000_des.tdr_ycut5.0um.csv"
 data="../out_svisual/init_peh_des.tdr_ycut5.0um.csv"
