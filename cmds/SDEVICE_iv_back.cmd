@@ -73,8 +73,8 @@ Solve {
 
 	Transient(
 		FinalTime=1
-		MaxStep=0.02
-		Goal {Name="a.cont" Voltage=-90}
+		MaxStep=0.01
+		Goal {Name="a.cont" Voltage=-10}
 	){
 		Coupled{Poisson Electron Hole}
 		Plot ( FilePrefix="../plts/back" Time=( range=(0 1) intervals=10) NoOverwrite )
