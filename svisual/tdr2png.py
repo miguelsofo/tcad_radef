@@ -37,7 +37,10 @@ def field2png(inTDR):
 	## Plot images
 	basename=inTDR.rsplit('/',1)[1]
 	#fields=['hDensity','eDensity','ElectrostaticPotential','Abs(ElectricField-V)','SpaceCharge','TotalCurrentDensity','eCurrentDensity','hCurrentDensity']
-	fields=['AcceptorConcentration']
+	#fields=['AcceptorConcentration']
+	#fields=['DonorConcentration']
+	#fields=['HeavyIonCharge','HeavyIonGeneration']
+	fields=['HeavyIonGeneration']
 	for f in fields:
 		tmplt_imgs()
 		os.system("sed -i 's/@field@/"+f+"/g' tmp.tcl")
@@ -48,7 +51,8 @@ def field2png(inTDR):
 	
 # ------------------------------
 for i in range(11):
-	tdrfile='../plts/back_'+str(i).zfill(4)+'_des.tdr'
+	#tdrfile='../plts/back_'+str(i).zfill(4)+'_des.tdr'
+	tdrfile='../plts/ion_'+str(i).zfill(4)+'_des.tdr'
 	field2png(tdrfile)
 
 

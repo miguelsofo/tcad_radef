@@ -11,5 +11,7 @@ def clean():
 #clean()
 #os.system("sprocess SPROCESS.cmd")
 #os.system("sdevice SDEVICE_iv_ford.cmd")
-os.system("sdevice SDEVICE_iv_back.cmd")
+#os.system("sdevice SDEVICE_iv_back.cmd")
+os.system("sdevice SDEVICE_alfa.cmd")
+#os.system("sdevice SDEVICE_ion.cmd")
 
