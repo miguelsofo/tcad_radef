@@ -40,7 +40,8 @@ def field2png(inTDR):
 	#fields=['AcceptorConcentration']
 	#fields=['DonorConcentration']
 	#fields=['HeavyIonCharge','HeavyIonGeneration']
-	fields=['HeavyIonGeneration']
+	#fields=['HeavyIonGeneration']
+	fields=['AlphaGeneration','hDensity','eDensity']
 	for f in fields:
 		tmplt_imgs()
 		os.system("sed -i 's/@field@/"+f+"/g' tmp.tcl")
@@ -50,9 +51,10 @@ def field2png(inTDR):
 	return 0
 	
 # ------------------------------
-for i in range(11):
+for i in range(21):
 	#tdrfile='../plts/back_'+str(i).zfill(4)+'_des.tdr'
-	tdrfile='../plts/ion_'+str(i).zfill(4)+'_des.tdr'
+	tdrfile='../plts/alfa_'+str(i).zfill(4)+'_des.tdr'
+	#tdrfile='../plts/ion_'+str(i).zfill(4)+'_des.tdr'
 	field2png(tdrfile)
 
 

@@ -80,7 +80,7 @@ Solve {
 
 	Transient ( 
   	InitialTime=0.0 
-  	FinalTime=20.0e-9 
+  	FinalTime=40.0e-9 
   	InitialStep=0.1e-9 
   	MinStep=1e-18 
   	MaxStep=10.0e-9 
@@ -94,8 +94,7 @@ Solve {
 	{ 
   	Coupled { Poisson Electron Hole Contact} 
   	CurrentPlot
-		Plot ( FilePrefix="../plts/alfa" Time= ( 0; 1e-9; 1.02e-9 ; 1.05e-9; 1.1e-9; 1.2e-9; 1.5e-9; 2e-9; 5e-9; 10e-9; 20e-9; 50e-9 ) NoOverwrite ) 
-		*Plot ( FilePrefix="../plts/alfa" Time=( range=(0 1) intervals=10)  NoOverwrite ) 
+		Plot ( FilePrefix="../plts/alfa" Time= ( 0; 1e-9; 1.01e-9; 1.02e-9 ; 1.03e-9 ; 1.04e-9 ; 1.05e-9; 1.1e-9; 1.2e-9; 1.3e-9; 1.5e-9; 2e-9; 3e-9;  5e-9; 10e-9 ; 15e-9 ; 20e-9; 25e-9; 30e-9; 35e-9; 40e-9 ) NoOverwrite ) 
 	}	
 }
 

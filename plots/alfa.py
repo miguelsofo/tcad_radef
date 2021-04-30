@@ -4,7 +4,7 @@ import matplotlib.backends.backend_pdf
 import pandas as pd
 
 # ----------------------------------------
-iv=pd.read_csv('../out_svisual/alfa.plt.csv',skiprows=[1])
+iv=pd.read_csv('../results/alfa.plt.csv',skiprows=[1])
 iv.info()
 
 fig=plt.figure()
